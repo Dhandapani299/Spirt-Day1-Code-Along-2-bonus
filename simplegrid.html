@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gridcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr 2fr);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(100px, auto);
+        /* justify-items: stretch;
+        align-items: stretch;*/
+      }
+      .gridcontainer > div {
+        padding: 10px;
+        background-color: gray;
+      }
+
+      .gridcontainer > div:nth-child(even) {
+        background-color: rgb(211, 204, 204);
+      }
+
+      div {
+        justify-self: center;
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gridcontainer">
+      <div>
+        Lorem ipsum
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elt 2
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 3
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 4
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 5
+      </div>
+    </div>
+  </body>
+</html>
